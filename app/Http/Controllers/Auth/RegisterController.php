@@ -55,6 +55,15 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function showRegistrationForm($token)
+    {
+        $invitation = Invitation::where('token', $token)->first();
+        if(!isset($invitation))
+            return response("You have not been invited to attend this event", 401);
+
+        return view('auth.register')->with(["user" => $user]);
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *

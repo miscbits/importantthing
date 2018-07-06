@@ -1,6 +1,6 @@
 <div>
     <h3>You're Invited!</h3>
-    <p>Hello, {{ $user->name }}</p>
+    <p>Hello, {{ $invitation->name }}</p>
 
     <p>Wilhem Alcivar and Alexandra Bozzini are having a wedding and you are invited to attend October 13, 2018</p>
 

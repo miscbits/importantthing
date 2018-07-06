@@ -18,9 +18,8 @@ class YoureInvited extends Mailable
      *
      * @return void
      */
-    public function __construct(User $user, Invitation $invitation)
+    public function __construct(Invitation $invitation)
     {
-        $this->user = $user;
         $this->invitation = $invitation;
     }
 
@@ -33,7 +32,6 @@ class YoureInvited extends Mailable
     {
         return $this->view('emails.invite')
             ->with([
-                'user' => $this->user,
                 'invitation' => $this->invitation,
             ]);
     }
