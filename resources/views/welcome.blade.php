@@ -65,7 +65,7 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(storage/img/background.jpg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(/images/background.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -117,7 +117,7 @@
 	</div>
 
 	@can('attend')
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(storage/img/background.jpg);">
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(/images/background.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
