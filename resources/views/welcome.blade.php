@@ -95,7 +95,7 @@
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="{{ asset('storage/img/groom.jpg') }}" alt="groom" class="img-responsive">
+						<img src="{{ asset('/images/groom.jpg') }}" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
 						<h3>Wilhem Alcivar</h3>
@@ -105,7 +105,7 @@
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
 				<div class="couple-half">
 					<div class="bride">
-						<img src="{{ asset('storage/img/bride.jpg') }}" alt="bride" class="img-responsive">
+						<img src="{{ asset('/images/bride.jpg') }}" alt="bride" class="img-responsive">
 					</div>
 					<div class="desc-bride">
 						<h3>Alexandra Bozzini</h3>
