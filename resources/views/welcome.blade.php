@@ -90,22 +90,10 @@
           <div class="col-md-12 text-center">
             <h3>GIVE THE GIFT OF PRESENTS</h3>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 offset-sm-4">
             <div class="box">
-              <div><img src="{{ asset("/images/reg1.png") }}" alt=""></div>
-              <a href="#" class="btn btn-default">Go to Store <i class="ion-ios-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="box">
-              <div><img src="{{ asset("/images/reg2.png") }}" alt=""></div>
-              <a href="#" class="btn btn-default">Go to Store <i class="ion-ios-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="box">
-              <div><img src="{{ asset("/images/reg3.png") }}" alt=""></div>
-              <a href="#" class="btn btn-default">Go to Store <i class="ion-ios-arrow-right"></i></a>
+              <div><img src="{{ asset("/images/amazon-registry-logo.png") }}" alt=""></div>
+              <a href="https://www.amazon.com/wedding/share/wilhem-and-alex" class="btn btn-default">Go to Store <i class="ion-ios-arrow-right"></i></a>
             </div>
           </div>
         </div>
