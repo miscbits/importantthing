@@ -19,7 +19,12 @@
       <div class="flexslider-container">
         <nav class="fixed-top navbar navbar-expand-lg">
         <div class="container-fluid">
-          
+        @if (session('status'))
+            <div class="alert alert-success">
+                {{ session('status') }}
+            </div>
+        @endif
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
           <span class="navbar-toggler-icon"><i class="ion-android-menu"></i></span>
           </button>
@@ -93,13 +98,41 @@
           <div class="col-sm-4 offset-sm-4">
             <div class="box">
               <div><img src="{{ asset("/images/amazon-registry-logo.png") }}" alt=""></div>
-              <a href="https://www.amazon.com/wedding/share/wilhem-and-alex" class="btn btn-default">Go to Store <i class="ion-ios-arrow-right"></i></a>
+              <a href="https://www.amazon.com/wedding/share/wilhem-and-alex" target="_blank" class="btn btn-default">Go to Store <i class="ion-ios-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
         
+    <!-- RSVP 06 -->
+    <section id="rsvp" class="rsvp-06" style="background-image: url({{ asset("/images/background6.jpg") }});">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <h3>Say you'll come</h3>
+            <p>Please let us know if you want to come,
+            <br>I hope to see you there.</p>
+          </div>
+          <div class="col-md-4">
+            <form method="post" name="form" action="/attendees">
+              {{ csrf_field() }}
+              <div class="alert alert-danger" id="name_alert" style="display:none;"> Please enter your name!</div>
+              <div class="alert alert-danger" id="email_alert" style="display:none;"> Please enter your email!</div>
+              <div class="alert alert-success" style="display:none;"> Thanks for your RSVP!</div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
+              </div>
+              <button type="submit" class="btn btn-default btn-block submit">Request and Invite <i class="ion-ios-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="container">
         <div class="row">

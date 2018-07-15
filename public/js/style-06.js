@@ -44,6 +44,28 @@ $(document).ready(function() {
     });
 });
 
+// Validate
+$(function() {
+    $(".submit").click(function() {
+        var name = $("#name").val();
+        var email = $("#email").val();
+
+        var isValid = true;
+
+        if (name == '') {
+            $('#name_alert').fadeIn().show();
+            isValid = false;
+        } else { $('#name_alert').fadeOut().hide(); }
+
+        if (email == '') {
+            $('#email_alert').fadeIn().show();
+            isValid = false;
+        } else { $('#email_alert').fadeOut().hide(); }
+        return isValid;
+    });
+});
+
+
 // SCROLLREVEAL
 window.sr = ScrollReveal();
 sr.reveal('#home .caption .box', {
