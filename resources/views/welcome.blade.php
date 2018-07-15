@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>The Wedding of Wilhem and Alex</title>
     <meta property="og:title" content="The Wedding of Alex and Wilhem" />
-    <meta property="og:image" content="{{ asset("/images/couple") }}" />
+    <meta property="og:image" content="{{ asset("/images/couple.jpg") }}" />
     <meta property="og:description" content="Information for our wedding" />
     <!-- Bootstrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
