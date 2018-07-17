@@ -128,7 +128,7 @@
               <div class="form-group">
                 <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
               </div>
-              <button type="submit" class="btn btn-default btn-block submit">Request and Invite <i class="ion-ios-arrow-right"></i></button>
+              <button type="submit" class="btn btn-default btn-block submit">Request an Invite <i class="ion-ios-arrow-right"></i></button>
             </form>
           </div>
         </div>
